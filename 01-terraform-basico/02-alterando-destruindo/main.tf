@@ -11,8 +11,8 @@ terraform {
 
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs#environment-variables
 provider "aws" {
-  region  = "eu-central-1" # Recomendo a região us-east-1 se você estiver no Brasil
-  profile = "tf014"        # Usar este atributo somente se não for o profile "default" no arquivo ~/.aws/credentials
+  region  = "us-east-1" # Recomendo a região us-east-1 se você estiver no Brasil
+  profile = "lab3"        # Usar este atributo somente se não for o profile "default" no arquivo ~/.aws/credentials
 }
 
 # terraform validate
@@ -28,7 +28,7 @@ resource "aws_s3_bucket" "my-test-bucket" {
     Name        = "My first Terraform bucket"
     Environment = "Dev"
     ManagedBy   = "Terraform"
-    Owner       = "Cleber Gasparoto"
-    CreatedAt   = "2021-01-14"
+    Owner       = "John Caracho"
+    CreatedAt   = "2022-02-14"
   }
 }
